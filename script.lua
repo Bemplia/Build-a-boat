@@ -16,8 +16,33 @@ local Scripts = Scripts:NewSection("Scripts")
 local Gui = Gui:NewSection("Gui")
 local Creator = Creator:NewSection("Creator Bemplia/aleksey312")
 
+Main:NewButton("What?!", "SUS", function()
+    game.Players.LocalPlayer:Kick("What is it?!")
+end)
+
+
 Main:NewButton("Rejoin", "Rejoin", function()
 game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+end)
+
+Main:NewButton("AntiAFK", "AntiIdle", function()
+	local GC = getconnections or get_signal_cons
+	if GC then
+		for i,v in pairs(GC(Players.LocalPlayer.Idled)) do
+			if v["Disable"] then
+				v["Disable"](v)
+			elseif v["Disconnect"] then
+				v["Disconnect"](v)
+			end
+		end
+	else
+		Players.LocalPlayer.Idled:Connect(function()
+			local VirtualUser = game:GetService("VirtualUser")
+			VirtualUser:CaptureController()
+			VirtualUser:ClickButton2(Vector2.new())
+		end)
+	end
+	if not (args[1] and tostring(args[1]) == 'nonotify') then notify('Anti Idle','Anti idle is enabled') end
 end)
 
 Main:NewButton("Remove Water", "", function()
@@ -37,13 +62,13 @@ Main:NewButton("Remove Trees", "", function()
 end)
 
 Main:NewButton("Remove Lock", "", function()
-    game:GetService("Workspace").WhiteZone.Lock.Part:Destroy()
-    game:GetService("Workspace")["Really redZone"].Lock.Part:Destroy()
-    game:GetService("Workspace").BlackZone.Lock.Part:Destroy()
-    game:GetService("Workspace")["Really blueZone"].Lock.Part:Destroy()
-    game:GetService("Workspace").CamoZone.Lock.Part:Destroy()
-    game:GetService("Workspace").MagentaZone.Lock.Part:Destroy()
-    game:GetService("Workspace")["New YellerZone"].Lock.Part:Destroy()
+    game:GetService("Workspace").WhiteZone.Lock:Destroy()
+    game:GetService("Workspace").CamoZone.Lock:Destroy()
+    game:GetService("Workspace").MagentaZone.Lock:Destroy()
+    game:GetService("Workspace").BlackZone.Lock:Destroy()
+    game:GetService("Workspace")["Really redZone"].Lock:Destroy()
+    game:GetService("Workspace")["Really blueZone"].Lock:Destroy()
+    game:GetService("Workspace")["New YellerZone"].Lock:Destroy()
 end)
 
 Main:NewToggle("AutoFarm", "AFKFarm", function(state)
@@ -51,12 +76,12 @@ Main:NewToggle("AutoFarm", "AFKFarm", function(state)
         enable = true
         while enable == true do
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-54.0039444, 84.9583664, 1762.224, -0.999866426, -0.00202333252, 0.0162199121, -9.91661331e-09, 0.992309213, 0.123783745, -0.0163456239, 0.123767212, -0.992176652)
-            wait(0.2)
+            wait(0.25)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
             if enable == false then
                 break
             end
-            wait(2)
+            wait(2.5)
             if enable == false then
                 break
             end
