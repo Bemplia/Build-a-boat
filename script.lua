@@ -49,12 +49,12 @@ Main:NewToggle("AutoFarm", "AFKFarm", function(state)
         enable = true
         while enable == true do
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-54.0039444, 84.9583664, 1762.224, -0.999866426, -0.00202333252, 0.0162199121, -9.91661331e-09, 0.992309213, 0.123783745, -0.0163456239, 0.123767212, -0.992176652)
-            wait(0.2)
+            wait(0.25)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
             if enable == false then
                 break
             end
-            wait(2)
+            wait(2.5)
             if enable == false then
                 break
             end
