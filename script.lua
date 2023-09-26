@@ -37,11 +37,13 @@ Main:NewButton("Remove Trees", "", function()
 end)
 
 Main:NewButton("Remove Lock", "", function()
-    for i,v in pairs(game:GetDescendants()) do
-        if v.Name == 'Lock' then
-            v:Destroy()
-        end
-    end
+    game:GetService("Workspace").WhiteZone.Lock.Part:Destroy()
+    game:GetService("Workspace")["Really redZone"].Lock.Part:Destroy()
+    game:GetService("Workspace").BlackZone.Lock.Part:Destroy()
+    game:GetService("Workspace")["Really blueZone"].Lock.Part:Destroy()
+    game:GetService("Workspace").CamoZone.Lock.Part:Destroy()
+    game:GetService("Workspace").MagentaZone.Lock.Part:Destroy()
+    game:GetService("Workspace")["New YellerZone"].Lock.Part:Destroy()
 end)
 
 Main:NewToggle("AutoFarm", "AFKFarm", function(state)
@@ -49,12 +51,12 @@ Main:NewToggle("AutoFarm", "AFKFarm", function(state)
         enable = true
         while enable == true do
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-54.0039444, 84.9583664, 1762.224, -0.999866426, -0.00202333252, 0.0162199121, -9.91661331e-09, 0.992309213, 0.123783745, -0.0163456239, 0.123767212, -0.992176652)
-            wait(0.25)
+            wait(0.2)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
             if enable == false then
                 break
             end
-            wait(2.5)
+            wait(2)
             if enable == false then
                 break
             end
