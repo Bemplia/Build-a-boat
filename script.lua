@@ -77,85 +77,108 @@ end)
 Main:NewToggle("AutoFarm Chest", "AFKFarm", function(state)
     if state then
         enable = true
-        while enable == true do
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-54.0039444, 84.9583664, 1762.224, -0.999866426, -0.00202333252, 0.0162199121, -9.91661331e-09, 0.992309213, 0.123783745, -0.0163456239, 0.123767212, -0.992176652)
+        while enable == true then
+	    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-54.0039444, 84.9583664, 1762.224, -0.999866426, -0.00202333252, 0.0162199121, -9.91661331e-09, 0.992309213, 0.123783745, -0.0163456239, 0.123767212, -0.992176652)
             wait(0.25)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
-            if enable == false then
+	    if enable == false then
                 break
             end
             wait(2.5)
-            if enable == false then
+	    if enable == false then
                 break
             end
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-54.1079063, 64.3214493, 2502.07568, -0.999743223, 0.00296215084, -0.0224656258, -1.1368023e-08, 0.991419077, 0.130721673, 0.0226600692, 0.130688101, -0.991164565)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
             wait(0.1)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+	    if enable == false then
+                break
+            end
             wait(2)
-            if enable == false then
+	    if enable == false then
                 break
             end
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-50.2122116, 66.7413025, 3245.00317, -0.999949038, 0.00155586773, -0.00997654069, -7.08470882e-09, 0.988056719, 0.154090747, 0.010097133, 0.154082894, -0.988006353)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
             wait(0.1)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+	    if enable == false then
+                break
+            end
             wait(2)
-            if enable == false then
+	    if enable == false then
+                break
+            end
+	    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.BoatStages.NormalStages.TheEnd.GoldenChest.Trigger.CFrame
+	    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+	    wait(0.5)
+	    if enable == false then
                 break
             end
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-44.0629883, 58.9831238, 4030.01929, -0.999466598, -0.00545828696, 0.0321981087, 3.74487286e-09, 0.985933602, 0.167137519, -0.0326574817, 0.16704838, -0.98540771)
-            game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
             wait(0.1)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+	    if enable == false then
+                break
+            end
             wait(2)
-            if enable == false then
+	    if enable == false then
                 break
             end
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-56.8305092, 55.0657997, 4760.271, -0.999936342, -0.00129597797, 0.0112095848, -7.5520239e-09, 0.99338311, 0.114847697, -0.0112842526, 0.114840388, -0.993319869)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
             wait(0.1)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+	    if enable == false then
+                break
+            end
             wait(2)
-            if enable == false then
+	    if enable == false then
                 break
             end
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.5864677, 44.2472954, 5584.37354, -0.999971807, -0.00156129419, 0.00734687224, -6.9717947e-09, 0.978156745, 0.207868531, -0.00751093682, 0.207862675, -0.978129208)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
             wait(0.1)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+	    if enable == false then
+                break
+            end
             wait(2)
-            if enable == false then
+	    if enable == false then
                 break
             end
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-53.1503983, 58.9461632, 6374.46289, -0.999992728, 0.000802412455, -0.00372232939, 6.4981549e-09, 0.977545381, 0.210725069, 0.00380783435, 0.210723534, -0.977538288)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
             wait(0.1)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+	    if enable == false then
+                break
+            end
             wait(2)
-            if enable == false then
+	    if enable == false then
                 break
             end
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-59.6752052, 57.7362709, 7198.58545, -0.999920428, 0.00258698268, -0.0123456102, 9.69319291e-09, 0.978742778, 0.205091611, 0.0126137454, 0.205075294, -0.978664935)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
             wait(0.1)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+	    if enable == false then
+                break
+            end
             wait(2)
-            if enable == false then
+	    if enable == false then
                 break
             end
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-52.720974, 54.7904854, 7912.30859, -0.99999696, -0.000487447542, 0.00242911559, 1.03510036e-08, 0.980453551, 0.196750626, -0.00247754063, 0.19675003, -0.980450571)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
             wait(0.1)
-            game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
-            wait(2)
-            if enable == false then
+	    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+	    wait(5)
+	    if enable == false then
                 break
             end
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-55.4348412, -356.102051, 9496.6543, -0.999946892, 4.42525128e-09, 0.0103066126, 5.36712053e-09, 1, 9.13572507e-08, -0.0103066126, 9.14077205e-08, -0.999946892)
-            game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
-            wait(21)
-        end
+	end
     else
         enable = false
         game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
