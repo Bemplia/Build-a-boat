@@ -103,6 +103,7 @@ Main:NewToggle("AutoFarm Chest", "AFKFarm", function(state)
             wait(2)
 	    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
 	    firetouchinterest(game.Players.LocalPlayer.Character.UpperTorso, game.Workspace.BoatStages.NormalStages.TheEnd.GoldenChest.Trigger, 0)
+	    wait(0.5)
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-44.0629883, 58.9831238, 4030.01929, -0.999466598, -0.00545828696, 0.0321981087, 3.74487286e-09, 0.985933602, 0.167137519, -0.0326574817, 0.16704838, -0.98540771)
             wait(0.1)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
