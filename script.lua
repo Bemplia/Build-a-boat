@@ -80,7 +80,7 @@ Main:NewButton("Esp", "", function()
 	        if v ~= game.Players.LocalPlayer then
 	            if v.Character.UpperTorso:FindFirstChild("BoxHandleAdornment") == nil and v.Character:FindFirstChild("BillboardGui") == nil then 
 	                local esp = Instance.new("BoxHandleAdornment", v.Character.UpperTorso)
-	                local BillboardGui = Instance.new("BillboardGui", v.UpperCharacter)
+	                local BillboardGui = Instance.new("BillboardGui", v.Character)
 	                local TextLabel = Instance.new("TextLabel", BillboardGui)
 	                esp.Adornee = v.Character.UpperTorso
 	                esp.ZIndex = 0
