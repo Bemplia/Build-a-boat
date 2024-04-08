@@ -74,6 +74,35 @@ Main:NewDropdown("Remove Lock", "Remove", {"White Zone", "Black Zone", "Red Zone
     end
 end)
 
+Main:NewButton("Esp", "", function()
+	while wait(1) do
+	    for i,v in pairs(game.Players:GetChildren()) do
+	        if v ~= game.Players.LocalPlayer then
+	            if v.Character.Torso:FindFirstChild("BoxHandleAdornment") == nil and v.Character:FindFirstChild("BillboardGui") == nil then 
+	                local esp = Instance.new("BoxHandleAdornment", v.Character.Torso)
+	                local BillboardGui = Instance.new("BillboardGui", v.Character)
+	                local TextLabel = Instance.new("TextLabel", BillboardGui)
+	                esp.Adornee = v.Character.Torso
+	                esp.ZIndex = 0
+	                esp.AlwaysOnTop = true
+	                esp.Transparency = 0.7
+	                esp.Size = Vector3.new(1.7,4.7,1)
+	                BillboardGui.AlwaysOnTop = true
+	                BillboardGui.Size = UDim2.new(0, 200, 0, 50)
+	                BillboardGui.StudsOffset = Vector3.new(0, 3, 0)
+	                TextLabel.BackgroundTransparency = 1
+	                TextLabel.Size = UDim2.new(0, 200, 0, 50)
+	                TextLabel.Text = v.Name
+	                TextLabel.TextStrokeTransparency = 0
+	                TextLabel.TextSize = 6
+	                esp.Color3 = v.TeamColor.Color
+	                TextLabel.TextColor3 = v.TeamColor.Color
+	            end
+	        end
+	    end
+	end
+end)
+
 Main:NewToggle("AutoFarm Chest", "AFKFarm", function(state)
     if state then
         enable = true
