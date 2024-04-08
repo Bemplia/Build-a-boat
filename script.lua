@@ -178,7 +178,7 @@ Main:NewToggle("AutoFarm Chest", "AFKFarm", function(state)
             game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
             wait(0.1)
 	    game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
-	    wait(5)
+	    wait(6)
 	    if enable == false then
                 break
             end
