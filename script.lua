@@ -78,11 +78,11 @@ Main:NewButton("Esp", "", function()
 	while wait(1) do
 	    for i,v in pairs(game.Players:GetChildren()) do
 	        if v ~= game.Players.LocalPlayer then
-	            if v.Character.Torso:FindFirstChild("BoxHandleAdornment") == nil and v.Character:FindFirstChild("BillboardGui") == nil then 
-	                local esp = Instance.new("BoxHandleAdornment", v.Character.Torso)
-	                local BillboardGui = Instance.new("BillboardGui", v.Character)
+	            if v.Character.UpperTorso:FindFirstChild("BoxHandleAdornment") == nil and v.Character:FindFirstChild("BillboardGui") == nil then 
+	                local esp = Instance.new("BoxHandleAdornment", v.Character.UpperTorso)
+	                local BillboardGui = Instance.new("BillboardGui", v.UpperCharacter)
 	                local TextLabel = Instance.new("TextLabel", BillboardGui)
-	                esp.Adornee = v.Character.Torso
+	                esp.Adornee = v.Character.UpperTorso
 	                esp.ZIndex = 0
 	                esp.AlwaysOnTop = true
 	                esp.Transparency = 0.7
