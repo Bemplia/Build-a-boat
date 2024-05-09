@@ -46,36 +46,36 @@ end)
 Main:NewDropdown("Remove Lock", "Remove", {"White Zone", "Black Zone", "Red Zone", "Green Zone", "Blue Zone", "Yellow Zone", "Purple Zone"}, function(currentOption)
     while currentOption == "White Zone" do
         game:GetService("Workspace").WhiteZone.Lock:Destroy()
-        wait(0.2)
+        task.wait()
     end
     while currentOption == "Black Zone" do
         game:GetService("Workspace").BlackZone.Lock:Destroy()
-        wait(0.2)
+        task.wait()
     end
     while currentOption == "Red Zone" do
         game:GetService("Workspace")["Really redZone"].Lock:Destroy()
-        wait(0.2)
+        task.wait()
     end
     while currentOption == "Green Zone" do
         game:GetService("Workspace").CamoZone.Lock:Destroy()
-        wait(0.2)
+        task.wait()
     end
     while currentOption == "Blue Zone" do
         game:GetService("Workspace")["Really blueZone"].Lock:Destroy()
-        wait(0.2)
+        task.wait()
     end
     while currentOption == "Yellow Zone" do
         game:GetService("Workspace")["New YellerZone"].Lock:Destroy()
-        wait(0.2)
+        task.wait()
     end
     while currentOption == "Purple Zone" do
         game:GetService("Workspace").MagentaZone.Lock:Destroy()
-        wait(0.2)
+        task.wait()
     end
 end)
 
 Main:NewButton("Esp", "", function()
-	while wait(1) do
+	while task.wait(1) do
 	    for i,v in pairs(game.Players:GetChildren()) do
 	        if v ~= game.Players.LocalPlayer then
 	            if v.Character.UpperTorso:FindFirstChild("BoxHandleAdornment") == nil and v.Character:FindFirstChild("BillboardGui") == nil then 
